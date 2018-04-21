@@ -1,0 +1,20 @@
+{
+  "name": "node-git-current-branch",
+  "version": "1.0.0",
+  "description": "Get the current git branch name using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeiGrand/node-git-current-branch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeiGrand/node-git-current-branch/issues"
+  },
+  "homepage": "https://github.com/WeiGrand/node-git-current-branch#readme"
+}
