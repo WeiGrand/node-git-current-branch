@@ -1,6 +1,6 @@
 {
   "name": "node-git-current-branch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the current git branch name using Node.js",
   "main": "index.js",
   "scripts": {
