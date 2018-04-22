@@ -13,12 +13,14 @@ const getCurrentBranchName = require('node-git-current-branch');
 getCurrentBranchName();
 ```
 
-### API
+## API
 
-#### getCurrentBranchName([path]);
+### getCurrentBranchName([path]);
 Returns branch name or false
 
 ##### path
 Type: `string`
+
 Default: `process.cwd()`
+
 The root path which you init your git repository.
