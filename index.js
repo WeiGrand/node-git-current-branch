@@ -3,13 +3,14 @@
  */
 
 const fs = require('fs');
+const path = require('path');
 
-function getCurrentBranchName(rootPath = process.cwd()) {
-    try {
-        return fs.readFileSync(`${rootPath}/.git/HEAD`, 'utf-8').trim().split('/')[2];
-    }catch (e) {
-        return false
-    }
-}
+module.exports = function getCurrentBranchName(p = process.cwd()) {
+  const gitHeadPath = `${p}/.git/HEAD`;
 
-module.exports = getCurrentBranchName;
+  return fs.existsSync(p) ?
+      fs.existsSync(gitHeadPath) ?
+          fs.readFileSync(gitHeadPath, 'utf-8').trim().split('/')[2] :
+          getCurrentBranchName(path.resolve(p, '..')) :
+      false
+};
